@@ -14,7 +14,7 @@
     "prod:serve": "cross-env NODE_ENV=production node ./server/index.js",
     "mock": "node ./canned.config.js",
     "dev:mock": "yarn install && npm-run-all --parallel mock \"dev:serve -- --mock\"",
-    "start": "yarn run prod",
+    "start": "yarn run dev",
     "audit": "yarn run build -- --report",
     "clean:dist": "rimraf dist",
     "generate": "plop --plopfile generators/index.js",
