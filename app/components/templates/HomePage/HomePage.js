@@ -10,6 +10,7 @@ import reducer from './HomePage.reducer';
 import Highlight from '../../molecules/Highlights';
 import Testimonials from '../../molecules/Testimonials';
 import TopBanner from '../../molecules/TopBanner';
+import SignIn from '../../molecules/SignIn';
 
 type Props = {};
 
@@ -33,6 +34,7 @@ class HomePage extends PureComponent<Props> {
       <Layout title="home" className="row" id="content-wrapper">
         <HeadTag description="Home Page Description" title="Home page" />
         <TopBanner title={title} banner={banner} />
+        <SignIn />
         <Highlight />
         <Testimonials />
       </Layout>
